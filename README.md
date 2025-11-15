@@ -1,11 +1,38 @@
+# Memorae – Frontend Redesign (Hackathon Submission)
 
-  # applstyle (Community)
+This project is a 24-hour redesign of the Memorae website as part of the Nexora Infotech Frontend Hackathon. The goal was to recreate the site in a completely new and unique way while using modern frontend practices.
 
-  This is a code bundle for applstyle (Community). The original project is available at https://www.figma.com/design/5JuTobSuMF0e3a6XTPLrZc/applstyle--Community-.
+## Live Demo
 
-  ## Running the code
+https://memoraeai.netlify.app/
 
-  Run `npm i` to install the dependencies.
+## Approach
 
-  Run `npm run dev` to start the development server.
-  
+The redesign is built from scratch with a new layout, new components, and rewritten content.
+Focus areas included clarity, spacing, responsiveness, and smooth animation.
+The UI takes inspiration from clean, minimal design with structured sections, consistent alignment, and modern motion effects.
+
+## Tech Stack
+
+- Vite + React
+- TailwindCSS
+- ShadCN UI
+- Framer Motion
+
+## Features
+
+- Original redesigned layout
+- Fully responsive
+- Smooth, modern animations
+- Component-based architecture
+- Custom content and structure
+- Clean visual hierarchy
+
+## Requirements Covered
+
+- Unique redesign
+- Improved UI/UX
+- Modern tech stack
+- Responsive and clean design
+- Creative animations
+- Live demo and documentation
