@@ -1,3 +1,4 @@
+
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { useState, useRef } from "react";
 import { Tag, Search, Share2, Sparkles } from "lucide-react";
@@ -56,10 +57,10 @@ export function ProductMockup() {
         ease: [0.22, 1, 0.36, 1] 
       }}
       className="mt-20 relative"
-      style={{ perspective: 1000 }}
+      style={{ perspective: 1000, zIndex: 10 }}
     >
       {/* Depth layers - blurred blobs behind mockup */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none -z-10">
         <motion.div
           animate={{
             scale: [1, 1.05, 1],
@@ -211,7 +212,7 @@ export function ProductMockup() {
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
-              className="absolute top-10 left-10 w-32 h-32 rounded-full bg-gradient-to-br from-blue-400/30 to-purple-400/30 blur-2xl"
+              className="absolute top-10 left-10 w-32 h-32 rounded-full bg-gradient-to-br from-blue-400/30 to-purple-400/30 blur-2xl -z-10"
             />
             <motion.div
               animate={{
@@ -224,7 +225,7 @@ export function ProductMockup() {
                 ease: "easeInOut",
                 delay: 1
               }}
-              className="absolute bottom-10 right-10 w-40 h-40 rounded-full bg-gradient-to-br from-pink-400/30 to-orange-400/30 blur-2xl"
+              className="absolute bottom-10 right-10 w-40 h-40 rounded-full bg-gradient-to-br from-pink-400/30 to-orange-400/30 blur-2xl -z-10"
             />
           </motion.div>
         </motion.div>
