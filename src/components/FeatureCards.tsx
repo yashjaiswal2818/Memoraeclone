@@ -30,7 +30,7 @@ const features = [
 
 export function FeatureCards() {
   return (
-    <div className="relative">
+    <div className="relative px-4 sm:px-6">
       {/* Soft section divider */}
       <motion.div
         initial={{ opacity: 0, scaleX: 0 }}
@@ -49,14 +49,14 @@ export function FeatureCards() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className="text-center mb-16"
+        className="text-center mb-12 sm:mb-16"
       >
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-          className="text-5xl mb-4 tracking-tight"
+          className="text-4xl sm:text-5xl mb-4 tracking-tight"
         >
           Thoughtfully crafted
         </motion.h2>
@@ -65,7 +65,7 @@ export function FeatureCards() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          className="text-xl text-muted-foreground max-w-2xl mx-auto"
+          className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto"
         >
           Every detail designed to create an experience that's both powerful and delightful.
         </motion.p>
@@ -108,7 +108,7 @@ export function FeatureCards() {
                   stiffness: 300,
                   damping: 20
                 }}
-                className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-shadow h-full border border-border/50 relative overflow-hidden backdrop-blur-xl"
+                className="bg-card rounded-2xl p-6 sm:p-8 shadow-soft hover:shadow-medium transition-shadow h-full border border-border/50 relative overflow-hidden backdrop-blur-xl"
               >
                 {/* Subtle gradient overlay */}
                 <div 
@@ -139,7 +139,7 @@ export function FeatureCards() {
                     }}
                   >
                     <motion.div 
-                      className="w-14 h-14 rounded-2xl bg-secondary flex items-center justify-center relative"
+                      className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-secondary flex items-center justify-center relative"
                       whileHover={{
                         boxShadow: `0 0 20px ${feature.glowColor}, 0 0 40px ${feature.glowColor.replace('0.15', '0.08')}`
                       }}
@@ -155,7 +155,7 @@ export function FeatureCards() {
                           ease: "easeInOut"
                         }}
                       >
-                        <Icon className="w-7 h-7 text-foreground" />
+                        <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-foreground" />
                       </motion.div>
 
                       {/* Subtle glow ring */}
@@ -170,7 +170,7 @@ export function FeatureCards() {
                     </motion.div>
                   </motion.div>
 
-                  <h3 className="text-2xl mb-3 tracking-tight">
+                  <h3 className="text-xl sm:text-2xl mb-3 tracking-tight">
                     {feature.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
